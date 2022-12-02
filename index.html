@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>SIGN IN</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link
+      href="fontawesome-free-6.2.0-web/fontawesome-free-6.2.0-web/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div id="left">
+        <div class="left-front">
+          <h1>Sign In</h1>
+          <div class="form-container">
+            <form>
+              <div>
+                <label class="form-label" for="name">Username</label>
+                <i class="fa-regular fa-user"></i>
+                <input type="text" class="form-input" id="name" required />
+              </div>
+              <div>
+                <label class="form-label" for="password">Password</label>
+                <i class="fa-solid fa-lock"></i>
+                <input
+                  type="password"
+                  class="form-input"
+                  id="password"
+                  required
+                />
+              </div>
+              <span id="valid" style="color: rgb(255, 51, 51)"></span>
+              <div class="remember">
+                <input type="checkbox" id="remember" />
+                <label for="remember">Remember me</label>
+              </div>
+              <input type="submit" value="LOG IN" id="signin-submit" />
+            </form>
+            <hr />
+            <div class="links">
+              <h4>Log in using your account on:</h4>
+              <div class="sign-links">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-telegram"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="left-back">
+          <h1>Welcome Back</h1>
+          <div>
+            To keep connected with us please login with your personal info
+          </div>
+          <button id="signin-btn">sign in</button>
+        </div>
+      </div>
+      <div id="right">
+        <div class="right-front">
+          <img src="images/18ea018ffe18afbe836bd2c409c0a11c7ce71e10.webp" />
+          <h1>Get Free Education</h1>
+          <button id="signup-btn">sign up</button>
+        </div>
+        <div class="right-back">
+          <h1>Create Account</h1>
+          <div class="sign-links">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-telegram"></i>
+          </div>
+          <div class="form-container">
+            <form>
+              <div>
+                <label class="form-label" for="user-name">Username</label>
+                <i class="fa-regular fa-user"></i>
+                <input type="text" class="form-input" id="user-name" />
+                <div class="error"></div>
+              </div>
+
+              <div>
+                <label class="form-label">Email</label>
+                <i class="fa-regular fa-envelope"></i>
+                <input type="text" class="form-input" id="user-email" />
+                <div class="error"></div>
+              </div>
+
+              <div>
+                <label class="form-label">Password</label>
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" class="form-input" id="user-pass1" />
+                <div class="error"></div>
+              </div>
+
+              <div>
+                <label class="form-label">Password again</label>
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" class="form-input" id="user-pass2" />
+                <div class="error"></div>
+              </div>
+
+              <input type="submit" value="Sign Up" id="signup-submit" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
